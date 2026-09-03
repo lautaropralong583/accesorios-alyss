@@ -1,0 +1,285 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>accesorios.alyss | Uñas y Anillos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff5fa;
+            color: #333;
+        }
+
+        header {
+            background: #ff8fc7;
+            padding: 25px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #d94f91;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .presentacion {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .presentacion h2 {
+            color: #d94f91;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .presentacion p {
+            font-size: 18px;
+        }
+
+        .productos {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px 60px;
+        }
+
+        .productos h2 {
+            text-align: center;
+            color: #d94f91;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .categoria {
+            margin-top: 45px;
+            margin-bottom: 20px;
+            color: #c43d7d;
+            font-size: 24px;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .producto {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            padding-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            background: #f5dce9;
+        }
+
+        .producto h3 {
+            margin: 15px 10px 8px;
+            color: #444;
+        }
+
+        .producto p {
+            color: #d94f91;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 11px 18px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .contacto {
+            background: #ff8fc7;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .contacto h2 {
+            margin-bottom: 15px;
+        }
+
+        .contacto p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .presentacion {
+                padding: 35px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>💗 accesorios.alyss</h1>
+    <p>Uñas y anillos para completar tu estilo ✨</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="presentacion" id="inicio">
+    <h2>Bienvenida a accesorios.alyss 💅</h2>
+    <p>Encontrá tus uñas y anillos favoritos.</p>
+</section>
+
+<section class="productos" id="productos">
+
+    <h2>✨ Nuestros productos ✨</h2>
+
+    <h3 class="categoria">💅 Uñas para pegar</h3>
+
+    <div class="contenedor">
+
+        <div class="producto">
+            <img src="https://placehold.co/600x600/f5dce9/d94f91?text=Uñas+1" alt="Uñas modelo 1">
+            <h3>Uñas Rosa</h3>
+            <p>$5.000</p>
+            <a class="boton" href="https://wa.me/TUNUMERO?text=Hola!%20Quiero%20consultar%20por%20las%20Uñas%20Rosa">
+                Comprar
+            </a>
+        </div>
+
+        <div class="producto">
+            <img src="https://placehold.co/600x600/f5dce9/d94f91?text=Uñas+2" alt="Uñas modelo 2">
+            <h3>Uñas Francesitas</h3>
+            <p>$5.500</p>
+            <a class="boton" href="https://wa.me/TUNUMERO?text=Hola!%20Quiero%20consultar%20por%20las%20Uñas%20Francesitas">
+                Comprar
+            </a>
+        </div>
+
+        <div class="producto">
+            <img src="https://placehold.co/600x600/f5dce9/d94f91?text=Uñas+3" alt="Uñas modelo 3">
+            <h3>Uñas Brillantes</h3>
+            <p>$6.000</p>
+            <a class="boton" href="https://wa.me/TUNUMERO?text=Hola!%20Quiero%20consultar%20por%20las%20Uñas%20Brillantes">
+                Comprar
+            </a>
+        </div>
+
+    </div>
+
+
+    <h3 class="categoria">💍 Anillos</h3>
+
+    <div class="contenedor">
+
+        <div class="producto">
+            <img src="https://placehold.co/600x600/f5dce9/d94f91?text=Anillo+1" alt="Anillo modelo 1">
+            <h3>Anillo Corazón</h3>
+            <p>$4.000</p>
+            <a class="boton" href="https://wa.me/TUNUMERO?text=Hola!%20Quiero%20consultar%20por%20el%20Anillo%20Corazón">
+                Comprar
+            </a>
+        </div>
+
+        <div class="producto">
+            <img src="https://placehold.co/600x600/f5dce9/d94f91?text=Anillo+2" alt="Anillo modelo 2">
+            <h3>Anillo Estrella</h3>
+            <p>$4.500</p>
+            <a class="boton" href="https://wa.me/TUNUMERO?text=Hola!%20Quiero%20consultar%20por%20el%20Anillo%20Estrella">
+                Comprar
+            </a>
+        </div>
+
+        <div class="producto">
+            <img src="https://placehold.co/600x600/f5dce9/d94f91?text=Anillo+3" alt="Anillo modelo 3">
+            <h3>Anillo Minimalista</h3>
+            <p>$3.500</p>
+            <a class="boton" href="https://wa.me/TUNUMERO?text=Hola!%20Quiero%20consultar%20por%20el%20Anillo%20Minimalista">
+                Comprar
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contacto" id="contacto">
+    <h2>📲 ¿Querés hacer un pedido?</h2>
+    <p>Escribinos por WhatsApp y te ayudamos.</p>
+
+    <a class="boton" href="https://wa.me/TUNUMERO?text=Hola!%20Quiero%20hacer%20un%20pedido">
+        Hablar por WhatsApp
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 accesorios.alyss - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
+```
